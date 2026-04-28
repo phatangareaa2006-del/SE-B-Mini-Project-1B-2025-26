@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "56229629682",
+    "project_id": "public-complaint-app-bbf5c",
+    "storage_bucket": "public-complaint-app-bbf5c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:56229629682:android:4c93f560bfb704d7a0ca6b",
+        "android_client_info": {
+          "package_name": "com.company.public_complaint_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSY_8GIpn96Sb0cNmBriEBKqfF5MXbvzY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

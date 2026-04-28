@@ -1,0 +1,8 @@
+<resources>
+
+    <!-- Base theme -->
+    <style name="Theme.LendLoop2" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize colors if needed -->
+    </style>
+
+</resources>

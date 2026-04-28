@@ -1,0 +1,61 @@
+<!-- Base Template - Navigation and common HTML structure for all pages -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character encoding and responsive design -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Page title that shows in browser tab -->
+    <title>{% block title %}Farm Buddy - Multi-Crop Growth Assistant{% endblock %}</title>
+    
+    <!-- Link to CSS file for styling -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <!-- NAVIGATION BAR at top of page -->
+    <nav class="navbar">
+        <!-- Logo/Brand name on left -->
+        <div class="navbar-brand">
+            <h1>🌾 Farm Buddy</h1>
+        </div>
+        
+        <!-- Navigation links in middle -->
+        <ul class="navbar-menu">
+            <!-- Link to dashboard page -->
+            <li><a href="/" class="nav-link">Dashboard</a></li>
+            <!-- Link to crops page -->
+            <li><a href="/crops/" class="nav-link">Crops</a></li>
+            <!-- Link to farmers page -->
+            <li><a href="/farmers/" class="nav-link">Farmers</a></li>
+            <!-- Link to tasks page -->
+            <li><a href="/tasks/" class="nav-link">Tasks</a></li>
+            <!-- Link to weather page -->
+            <li><a href="/weather/" class="nav-link">Weather</a></li>
+        </ul>
+        
+        <!-- Admin link on right -->
+        <div class="navbar-right">
+            <a href="/admin/" class="admin-link">Admin Panel</a>
+        </div>
+    </nav>
+    
+    <!-- MAIN CONTENT AREA - Different for each page -->
+    <div class="container">
+        <!-- Content from specific pages goes here using {% block content %} -->
+        {% block content %}
+        <!-- Default content if no page is loaded -->
+        <p>Loading...</p>
+        {% endblock %}
+    </div>
+    
+    <!-- FOOTER at bottom of page -->
+    <footer class="footer">
+        <p>&copy; 2025 Farm Buddy - Helping Farmers Grow Better Crops | Made with ❤️ for Indian Farmers</p>
+    </footer>
+    
+    <!-- Link to JavaScript file for dynamic functionality -->
+    <script src="{% static 'js/app.js' %}"></script>
+</body>
+</html>

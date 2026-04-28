@@ -1,0 +1,78 @@
+name,season,description,soil_type,growth_duration_days,optimal_temperature,optimal_humidity,optimal_soil_moisture,water_required_mm_per_week,fertilizer_required,expected_yield_per_hectare
+Arhar,Kharif,"Imported from Kaggle dataset. Common states: Arunachal Pradesh, Chhatisgarh, Madhya Pradesh, etc.",Loamy,160,32.5,60,50,25,"NPK,Rhizobium",0.0
+Bajra,Kharif,"Imported from Kaggle dataset. Common states: Andaman and Nicobar Island, Andhra Pradesh, Chandigarh, etc.",Loamy,48,30.07,60,50,25,"Nitrogen,Phosphorus,Potash",70414.48
+Banana,Rabi,"Imported from Kaggle dataset. Common states: Andaman and Nicobar Island, Arunachal Pradesh, Dadra Nagar Haveli and Daman and Diu, etc.",Loamy,368,28.52,60,50,25,NPK,89485.0
+Barley BH-902,Rabi,Imported from Kaggle dataset. Common states: Himachal Pradesh,Loamy,65,17.5,60,50,25,NPK,43500.0
+Barley Pusa Losar (BH- 380),Rabi,"Imported from Kaggle dataset. Common states: Goa, Haryana, Jammu and Kashmir, etc.",Loamy,66,18.5,60,50,25,NPK,43500.0
+Black Gram,Rabi,"Imported from Kaggle dataset. Common states: Andaman and Nicobar Island, Assam, Bihar, etc.",Loamy,78,30.05,60,50,25,NPK,50058.97
+Black Pepper,Rabi,"Imported from Kaggle dataset. Common states: Bihar, Chhatisgarh, Delhi, etc.",Loamy,135,27.52,60,50,25,"Lime,Dolomite",0.0
+Cardamom,Kharif,"Imported from Kaggle dataset. Common states: Andaman and Nicobar Island, Andhra Pradesh, Delhi, etc.",Loamy,732,22.52,60,50,25,NPK,0.0
+Cashewnut,Rabi,"Imported from Kaggle dataset. Common states: Assam, Karnataka, Kerela, etc.",Loamy,1032,25.02,60,50,25,"Manure,NPK",91548.76
+Castor Seed,Kharif,"Imported from Kaggle dataset. Common states: Madhya Pradesh, Punjab, Telangana",Loamy,6,23.0,60,50,25,"Phosphorus,Calcium,Sulfur",0.0
+Chillies,Kharif,"Imported from Kaggle dataset. Common states: Bihar, Karnataka",Loamy,42,22.5,60,50,25,"Compost,Nitrogen,Phosphorus",0.0
+Clove,Kharif,"Imported from Kaggle dataset. Common states: Andaman and Nicobar Island, Arunachal Pradesh, Bihar, etc.",Loamy,150,30.04,60,50,25,NPK,0.0
+Cocoa,Rabi,"Imported from Kaggle dataset. Common states: Chhatisgarh, Delhi, Lakshadweep, etc.",Loamy,165,26.5,60,50,25,"Nitrogen,Potassium,Phosphorus,Sulphur,Calcium,Magnesium,Boron,Zinc",80000.0
+Coffee,Kharif,"Imported from Kaggle dataset. Common states: Assam, Goa, Kerela, etc.",Loamy,255,21.5,60,50,25,"Nitrogen,Ammonium Nitrate",0.0
+Cotton CICR-3 (CISA 614),Kharif,"Imported from Kaggle dataset. Common states: Andaman and Nicobar Island, Haryana, Manipur",Loamy,112,23.0,60,50,25,NPK,0.0
+Cotton CNH012,Kharif,"Imported from Kaggle dataset. Common states: Andaman and Nicobar Island, Haryana, Manipur, etc.",Loamy,115,22.5,60,50,25,NPK,0.0
+Cotton VBCH 2231,Kharif,Imported from Kaggle dataset. Common states: Pudducherry,Loamy,100,23.5,60,50,25,NPK,0.0
+Cowpea,Kharif,"Imported from Kaggle dataset. Common states: Mizoram, Odisha, Punjab",Clay,68,31.0,60,50,25,NPK,0.0
+Dry Ginger,Kharif,"Imported from Kaggle dataset. Common states: Kerela, Mizoram, Odisha, etc.",Loamy,178,31.5,60,50,25,NPK,0.0
+Flax,Rabi,"Imported from Kaggle dataset. Common states: Delhi, Himachal Pradesh, Meghalaya, etc.",Loamy,130,15.0,60,50,25,"NPK,Sulfur",0.0
+Garlic,Rabi,"Imported from Kaggle dataset. Common states: Bihar, Chhatisgarh",Loamy,135,20.0,60,50,25,NPK,400000.0
+Groundnut GPBD 5,Kharif,"Imported from Kaggle dataset. Common states: Bihar, Chhatisgarh, Madhya Pradesh",Loamy,116,26.0,60,50,25,"Superphosphate,Potassium",100177.47
+Groundnut Girnar - 3 (PBS 12160),Kharif,"Imported from Kaggle dataset. Common states: Jharkhand, Pudducherry, Punjab, etc.",Loamy,178,25.0,60,50,25,"Superphosphate,Potassium",100177.47
+Groundnut Kadiri Harithandhra (K 1319),Kharif,Imported from Kaggle dataset. Common states: Bihar,Loamy,116,25.5,60,50,25,"Superphosphate,Potassium",100177.47
+Horse Gram,Rabi,"Imported from Kaggle dataset. Common states: Andaman and Nicobar Island, Chandigarh, Delhi, etc.",Loamy,150,27.0,60,50,25,"Manure,NPK",50058.97
+Jowar,Kharif,"Imported from Kaggle dataset. Common states: Andhra Pradesh, Bihar, Chhatisgarh, etc.",Loamy,70,29.5,60,50,25,"Nitrogen,O2P5",10974.07
+Jute,Kharif,"Imported from Kaggle dataset. Common states: Delhi, Gujarat, Himachal Pradesh, etc.",Loamy,135,30.0,60,50,25,NPK,0.0
+Khesari,Rabi,"Imported from Kaggle dataset. Common states: Assam, Bihar",Loamy,128,20.0,60,50,25,Basal dose,28000.0
+Lentil Pant Lentil-7(Pant L-024),Rabi,"Imported from Kaggle dataset. Common states: Bihar, Chhatisgarh, Punjab",Loamy,53,20.5,60,50,25,"Phosphate,Nitrogen",0.0
+Lentil Pant Lentil-8(Pant L-063),Rabi,"Imported from Kaggle dataset. Common states: Andhra Pradesh, Bihar, Himachal Pradesh, etc.",Loamy,52,20.0,60,50,25,"Phosphate,Nitrogen",0.0
+Maize DHM 119 (BH 4062),Kharif,"Imported from Kaggle dataset. Common states: Goa, Haryana",Loamy,99,22.5,60,50,25,Nitrogen,31369.84
+Maize HQPM-4,Kharif,"Imported from Kaggle dataset. Common states: Jammu and Kashmir, Jharkhand, Madhya Pradesh, etc.",Loamy,98,21.5,60,50,25,Nitrogen,31369.84
+Maize HSC1,Kharif,"Imported from Kaggle dataset. Common states: Chandigarh, Chhatisgarh, Himachal Pradesh, etc.",Loamy,98,21.0,60,50,25,Nitrogen,31369.84
+Maize MCH 36 (Hybrid) (DKC 9099),Kharif,Imported from Kaggle dataset. Common states: Odisha,Loamy,98,22.0,60,50,25,Nitrogen,31369.84
+Maize PMH 5 (JH 3110),Kharif,"Imported from Kaggle dataset. Common states: Bihar, Chhatisgarh, Maharashtra, etc.",Loamy,100,23.5,60,50,25,Nitrogen,31369.84
+Masoor,Kharif,"Imported from Kaggle dataset. Common states: Chhatisgarh, Goa, Kerela, etc.",Loamy,125,24.0,60,50,25,"Rhizobium,Nitrogen",0.0
+Millet 86M64 (MSH 203) (Hybrid),Kharif,"Imported from Kaggle dataset. Common states: Chhatisgarh, Gujarat, Madhya Pradesh, etc.",Clay,68,28.5,60,50,25,"Nitrogen,Magnesium,Potassium,Phosphorus",59556.38
+Millet HHB 226 (MH 1479),Kharif,"Imported from Kaggle dataset. Common states: Goa, West Bengal",Clay,70,30.5,60,50,25,"Nitrogen,Magnesium,Potassium,Phosphorus",59556.38
+Millet MH 1540 (86M64) (Hybrid),Kharif,"Imported from Kaggle dataset. Common states: Arunachal Pradesh, Gujarat, Madhya Pradesh, etc.",Clay,69,29.0,60,50,25,"Nitrogen,Magnesium,Potassium,Phosphorus",59556.38
+Millet Nandi-61 (MH-1548),Kharif,"Imported from Kaggle dataset. Common states: Chhatisgarh, Dadra Nagar Haveli and Daman and Diu, Rajasthan, etc.",Clay,68,27.83,60,50,25,"Nitrogen,Magnesium,Potassium,Phosphorus",59556.38
+Millet Nandi-65 (MH-1549),Kharif,"Imported from Kaggle dataset. Common states: Andhra Pradesh, Bihar, Chhatisgarh, etc.",Clay,68,27.26,60,50,25,"Nitrogen,Magnesium,Potassium,Phosphorus",59556.38
+Moong,Summer,"Imported from Kaggle dataset. Common states: Arunachal Pradesh, Bihar, Goa, etc.",Loamy,62,30.04,60,50,25,"Phosphorus,Nitrogen,Rhizobium",0.0
+Oilseed,Rabi,"Imported from Kaggle dataset. Common states: Andaman and Nicobar Island, Assam, Chandigarh, etc.",Loamy,112,22.51,60,50,25,"Magnesium, Calcium, Potassium",0.0
+Onion,Rabi,"Imported from Kaggle dataset. Common states: Gujarat, Rajasthan",Loamy,115,20.5,60,50,25,NPK,0.0
+Paddy (CNI 383-5-11),Kharif,"Imported from Kaggle dataset. Common states: Dadra Nagar Haveli and Daman and Diu, Gujarat, Maharashtra, etc.",Clay,113,30.5,60,50,25,"Potassium,Urea",63851.84
+Paddy CR Dhan 401 (REETA),Kharif,"Imported from Kaggle dataset. Common states: Arunachal Pradesh, Maharashtra",Clay,114,31.75,60,50,25,"Potassium,Urea",63851.84
+Paddy CR Dhan 501 (IET 19189),Kharif,"Imported from Kaggle dataset. Common states: Andhra Pradesh, Haryana, Maharashtra",Clay,116,33.0,60,50,25,"Potassium,Urea",63851.84
+Paddy CR Dhan 601 (IET 18558),Kharif,"Imported from Kaggle dataset. Common states: Chhatisgarh, Maharashtra",Clay,115,32.5,60,50,25,"Potassium,Urea",63851.84
+Paddy Chinsurah Rice (IET 19140),Kharif,"Imported from Kaggle dataset. Common states: Dadra Nagar Haveli and Daman and Diu, Gujarat, Himachal Pradesh, etc.",Clay,112,30.0,60,50,25,"Potassium,Urea",63851.84
+Paddy IGKVR-1 (IET 19569),Kharif,"Imported from Kaggle dataset. Common states: Gujarat, Rajasthan",Clay,114,31.0,60,50,25,"Potassium,Urea",63851.84
+Paddy IGKVR-2 (IET 19795),Kharif,"Imported from Kaggle dataset. Common states: Andhra Pradesh, Arunachal Pradesh",Clay,114,31.5,60,50,25,"Potassium,Urea",63851.84
+Paddy RC Maniphou 11 (IET 20193),Kharif,"Imported from Kaggle dataset. Common states: Chandigarh, Maharashtra",Clay,116,33.5,60,50,25,"Potassium,Urea",63851.84
+Peas,Rabi,Imported from Kaggle dataset. Common states: Maharashtra,Loamy,75,27.5,60,50,25,NPK,0.0
+Pulses,Rabi,"Imported from Kaggle dataset. Common states: Pudducherry, Rajasthan",Loamy,98,25.0,60,50,25,"Phosphorus,Calcium,Sulfur,Molybdenum",0.0
+Ragi,Kharif,"Imported from Kaggle dataset. Common states: Assam, Bihar, Karnataka, etc.",Sandy,3,27.86,60,50,25,NPK,50636.38
+Rice,Kharif,"Imported from Kaggle dataset. Common states: Dadra Nagar Haveli and Daman and Diu, Delhi, Haryana, etc.",Clay,112,30.03,60,50,25,Urea,63851.84
+Rubber,Kharif,Imported from Kaggle dataset. Common states: Chhatisgarh,Loamy,125,28.5,60,50,25,"Urea,Phosphate,Potash",140000.0
+Sesame,Rabi,"Imported from Kaggle dataset. Common states: Madhya Pradesh, Maharashtra, Punjab, etc.",Loamy,42,28.0,60,50,25,NPK,0.0
+Soyabean,Kharif,"Imported from Kaggle dataset. Common states: Assam, Goa",Loamy,55,23.5,60,50,25,"MAP,Phosphorus",70632.15
+Sugarcane Co-0218,Kharif,"Imported from Kaggle dataset. Common states: Rajasthan, Uttar Pradesh",Loamy,376,28.5,60,50,25,Nitrogen,893130.5
+Sugarcane Karan 5 (Co 0124),Kharif,"Imported from Kaggle dataset. Common states: Arunachal Pradesh, Haryana, Karnataka, etc.",Loamy,376,28.0,60,50,25,Nitrogen,893130.5
+Sugarcane Karan 6 (Co 0239),Kharif,"Imported from Kaggle dataset. Common states: Madhya Pradesh, Punjab, Tripura",Loamy,375,27.5,60,50,25,Nitrogen,893130.5
+Sunflower,Rabi,"Imported from Kaggle dataset. Common states: Himachal Pradesh, Jharkhand, Madhya Pradesh, etc.",Loamy,95,28.5,60,50,25,"Calcium,Sulfur",90739.72
+Sunhemp,Rabi,Imported from Kaggle dataset. Common states: Chhatisgarh,Loamy,75,21.5,60,50,25,Nitrogen,30000.0
+Sweet potato,Rabi,Imported from Kaggle dataset. Common states: Uttarakhand,Loamy,122,37.5,60,50,25,NPK(low),0.0
+Tea,Kharif,"Imported from Kaggle dataset. Common states: Assam, Dadra Nagar Haveli and Daman and Diu, Gujarat, etc.",Clay,62,25.08,60,50,25,"UT 752,Dolomite",353763.0
+Tobacco,Rabi,"Imported from Kaggle dataset. Common states: Bihar, Madhya Pradesh",Loamy,105,17.5,60,50,25,Nitrogen,0.0
+Tomato,Rabi,"Imported from Kaggle dataset. Common states: Bihar, Mizoram",Loamy,55,22.0,60,50,25,Phosphorus,79126.7
+Turmeric,Kharif,"Imported from Kaggle dataset. Common states: Assam, Chhatisgarh, Delhi, etc.",Loamy,240,25.09,60,50,25,"Nitrogen,Potassium,Phosphorus",80548.0
+Urad,Kharif,"Imported from Kaggle dataset. Common states: Andaman and Nicobar Island, Andhra Pradesh, Arunachal Pradesh, etc.",Loamy,78,30.07,60,50,25,NPK,0.0
+Varagu,Kharif,Imported from Kaggle dataset. Common states: Chhatisgarh,Clay,162,27.5,60,50,25,NPK,0.0
+Wheat MACS 6222,Rabi,"Imported from Kaggle dataset. Common states: Assam, Bihar",Loamy,106,19.0,60,50,25,"Phosphorus,Nitrogen",50166.54
+Wheat MPO(JW) 1215 (MPO 1215),Rabi,"Imported from Kaggle dataset. Common states: Bihar, Chhatisgarh, Himachal Pradesh, etc.",Loamy,105,18.5,60,50,25,"Phosphorus,Nitrogen",50166.54
+Wheat Netravati (NIAW 1415),Rabi,Imported from Kaggle dataset. Common states: Chhatisgarh,Loamy,98,22.5,60,50,25,"Phosphorus,Nitrogen",50166.54
+Wheat PDW 314,Rabi,Imported from Kaggle dataset. Common states: Uttar Pradesh,Loamy,106,-8.5,60,50,25,"Phosphorus,Nitrogen",50166.54
+Wheat VL Gehun 907 (VL 907),Rabi,"Imported from Kaggle dataset. Common states: Andhra Pradesh, Arunachal Pradesh, Chandigarh, etc.",Loamy,107,20.5,60,50,25,"Phosphorus,Nitrogen",50166.54
+Wheat WHD 943,Rabi,"Imported from Kaggle dataset. Common states: Andhra Pradesh, Ladakh",Loamy,108,22.0,60,50,25,"Phosphorus,Nitrogen",50166.54

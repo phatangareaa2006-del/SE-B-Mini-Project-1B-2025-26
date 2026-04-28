@@ -1,0 +1,3 @@
+name,season,description,soil_type,growth_duration_days,optimal_temperature,optimal_humidity,optimal_soil_moisture,water_required_mm_per_week,fertilizer_required,expected_yield_per_hectare
+Rice,Kharif,Staple monsoon crop,Loamy,120,28,70,55,35,NPK 10-26-26,4500
+Wheat,Rabi,Major winter crop,Loamy,110,22,55,45,22,NPK 12-32-16,3800

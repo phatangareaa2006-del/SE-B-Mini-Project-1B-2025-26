@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "252500067683",
+    "project_id": "blooddrop-fa14b",
+    "storage_bucket": "blooddrop-fa14b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:252500067683:android:77067de38786880f413f56",
+        "android_client_info": {
+          "package_name": "com.example.blooddrop"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAuODJC6mDhqbD-8McRk8po48Vy_sicxWQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

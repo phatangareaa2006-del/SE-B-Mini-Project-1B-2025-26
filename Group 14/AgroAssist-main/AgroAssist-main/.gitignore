@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Django / local runtime files
+*.log
+local_settings.py
+db.sqlite3
+*.sqlite3
+.env
+.env.local
+.env.*.local
+!backend/.env.example
+.pytest_cache/
+
+# Python tooling caches
+.mypy_cache/
+.ruff_cache/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Flutter / Dart artifacts
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub/
+build/
+
+# Flutter platform build outputs
+android/.gradle/
+android/app/build/
+ios/Pods/
+ios/.symlinks/
+ios/Flutter/ephemeral/
+windows/flutter/ephemeral/
+.vercel

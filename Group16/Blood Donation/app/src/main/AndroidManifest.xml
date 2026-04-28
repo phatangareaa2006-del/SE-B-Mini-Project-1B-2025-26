@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- 🔥 ADD THIS LINE -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Blooddrop">
+
+        <activity android:name=".AdminActivity" />
+        <activity android:name=".UserActivity" />
+        <activity android:name=".AdminLoginActivity"/>
+        <activity android:name=".UserAuthActivity"/>
+        <activity android:name=".UserLoginActivity"/>
+        <activity android:name=".UserHomeActivity"/>
+        <activity android:name=".Step1Activity"/>
+        <activity android:name=".Step2Activity"/>
+        <activity android:name=".Step3Activity"/>
+        <activity android:name=".Step4Activity"/>
+        <activity android:name=".DonorDashboardActivity"/>
+        <activity android:name=".AcceptorRequestsActivity"/>
+        <activity android:name=".DonorProfileActivity"/>
+        <activity android:name=".UserChoiceActivity" />
+        <activity android:name=".AccepterAuthActivity"/>
+        <activity android:name=".AccepterLoginActivity"/>
+        <activity android:name=".AccepterSignupActivity"/>
+        <activity android:name=".AcceptorDashboardActivity"/>
+        <activity android:name=".AdminChoiceActivity"/>
+        <activity android:name=".AdminDonorActivity"/>
+        <activity android:name=".AdminAcceptorActivity"/>
+        <activity android:name=".RaiseRequestActivity"/>
+        <activity android:name=".DonorRequestsActivity"/>
+        <activity android:name=".AdminChoiceActivity"/>
+        <activity android:name=".CertificateActivity" />
+        <activity android:name=".AdminVerifyActivity" />
+
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+    </application>
+
+</manifest>
