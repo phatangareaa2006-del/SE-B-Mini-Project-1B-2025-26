@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:enableOnBackInvokedCallback="true"
+        android:icon="@drawable/lendloop_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/lendloop_logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.LendLoop2">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Use exported="false" for all app internal activities for security -->
+        <activity android:name=".LoginActivity" android:exported="false" />
+        <activity android:name=".RegisterActivity" android:exported="false" />
+        <activity android:name=".DashboardActivity" android:exported="false" />
+        <activity android:name=".ItemListActivity" android:exported="false" />
+        <activity android:name=".ItemDetailActivity" android:exported="false" />
+        <activity android:name=".AddItemActivity" android:exported="false" />
+        <activity android:name=".ProfileActivity" android:exported="false" />
+        <activity android:name=".BorrowedItemsActivity" android:exported="false" />
+        <activity android:name=".UserLendItemActivity" android:exported="false" />
+        <activity android:name=".MyListedItemsActivity" android:exported="false" />
+        <activity android:name=".BrowseUserItemsActivity" android:exported="false" />
+        <activity android:name=".MyRequestsActivity" android:exported="false" />
+
+    </application>
+
+</manifest>

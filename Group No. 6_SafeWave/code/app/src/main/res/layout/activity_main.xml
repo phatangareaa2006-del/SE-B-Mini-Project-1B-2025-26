@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Name"
+        android:layout_marginTop="40dp"/>
+
+    <EditText
+        android:id="@+id/editPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Phone Number"
+        android:inputType="phone"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Contact"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/btnSOS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SEND SOS"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/btnView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Saved Contacts"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- TABLE HIDDEN BY DEFAULT -->
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <TableRow>
+
+            <TextView
+                android:text="Name"
+                android:textStyle="bold"
+                android:padding="10dp"/>
+
+            <TextView
+                android:text="Number"
+                android:textStyle="bold"
+                android:padding="10dp"/>
+
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>
+

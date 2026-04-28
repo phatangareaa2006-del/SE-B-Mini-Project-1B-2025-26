@@ -1,0 +1,373 @@
+/* CSS Styling for Farm Buddy Frontend */
+
+/* ========== GENERAL STYLING ========== */
+
+/* Apply to entire page */
+* {
+    margin: 0;  /* Remove default margins */
+    padding: 0;  /* Remove default padding */
+    box-sizing: border-box;  /* Include padding/border in width calculations */
+}
+
+/* Body - main page background */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  /* Clean, readable font */
+    background-color: #f5f5f5;  /* Light gray background */
+    color: #333;  /* Dark text color */
+    line-height: 1.6;  /* Space between lines */
+}
+
+/* ========== NAVIGATION BAR ========== */
+
+/* Navigation bar at top */
+.navbar {
+    background-color: #2ecc71;  /* Green color */
+    padding: 1rem 2rem;  /* Space inside navbar */
+    display: flex;  /* Side-by-side layout */
+    justify-content: space-between;  /* Spread items apart */
+    align-items: center;  /* Vertically centered */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);  /* Subtle shadow */
+}
+
+/* Brand/logo in navbar */
+.navbar-brand h1 {
+    color: white;  /* White text */
+    font-size: 1.5rem;  /* Larger text */
+}
+
+/* Navigation menu links */
+.navbar-menu {
+    list-style: none;  /* Remove bullet points */
+    display: flex;  /* Side-by-side layout */
+    gap: 2rem;  /* Space between links */
+}
+
+/* Individual navigation links */
+.nav-link {
+    color: white;  /* White text */
+    text-decoration: none;  /* Remove underline */
+    font-weight: 500;  /* Slightly bold */
+    transition: 0.3s;  /* Smooth animation on hover */
+}
+
+/* Hover effect on navigation links */
+.nav-link:hover {
+    opacity: 0.8;  /* Slightly transparent */
+    text-decoration: underline;  /* Underline on hover */
+}
+
+/* Right side of navbar (admin link) */
+.navbar-right {
+    display: flex;
+    gap: 1rem;
+}
+
+/* Admin link styling */
+.admin-link {
+    background-color: white;  /* White background */
+    color: #2ecc71;  /* Green text */
+    padding: 0.5rem 1.5rem;  /* Inside spacing */
+    border-radius: 20px;  /* Rounded corners */
+    text-decoration: none;  /* Remove underline */
+    font-weight: bold;  /* Bold text */
+    transition: 0.3s;  /* Smooth animation */
+}
+
+/* Hover on admin link */
+.admin-link:hover {
+    background-color: #f0f0f0;  /* Slightly darker on hover */
+}
+
+/* ========== MAIN CONTAINER ========== */
+
+/* Main content container */
+.container {
+    max-width: 1200px;  /* Maximum width */
+    margin: 2rem auto;  /* Center with space on top/bottom */
+    padding: 0 2rem;  /* Side padding for smaller screens */
+    min-height: 60vh;  /* Take up most of screen height */
+}
+
+/* ========== DASHBOARD ========== */
+
+/* Dashboard heading */
+.dashboard h2 {
+    color: #2ecc71;  /* Green color */
+    font-size: 2.5rem;  /* Large heading */
+    margin-bottom: 0.5rem;  /* Space below */
+}
+
+/* Subtitle text */
+.subtitle {
+    color: #666;  /* Light gray text */
+    font-size: 1.1rem;  /* Slightly larger */
+    margin-bottom: 2rem;  /* Space below */
+}
+
+/* Grid of cards */
+.cards-grid {
+    display: grid;  /* Grid layout */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));  /* Auto-responsive columns */
+    gap: 2rem;  /* Space between cards */
+    margin-bottom: 3rem;  /* Space below entire grid */
+}
+
+/* Individual card */
+.card {
+    background-color: white;  /* White background */
+    border-radius: 8px;  /* Slightly rounded corners */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);  /* Subtle shadow */
+    overflow: hidden;  /* Hide overflow content */
+    transition: transform 0.3s;  /* Smooth animation on hover */
+}
+
+/* Hover effect on cards */
+.card:hover {
+    transform: translateY(-5px);  /* Move card up slightly */
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);  /* Bigger shadow on hover */
+}
+
+/* Card header (title area) */
+.card-header {
+    background-color: #f0f0f0;  /* Light gray background */
+    padding: 1.5rem;  /* Inside spacing */
+    border-bottom: 2px solid #2ecc71;  /* Green bottom border */
+}
+
+/* Card header heading */
+.card-header h3 {
+    color: #333;  /* Dark text */
+    margin: 0;  /* No margins */
+}
+
+/* Card body (content area) */
+.card-body {
+    padding: 1.5rem;  /* Inside spacing */
+}
+
+/* List container inside cards */
+.list-container {
+    max-height: 200px;  /* Maximum height */
+    overflow-y: auto;  /* Scrollable if too tall */
+    margin-bottom: 1rem;  /* Space below */
+}
+
+/* Individual list item */
+.list-item {
+    padding: 0.75rem;  /* Inside spacing */
+    border-bottom: 1px solid #eee;  /* Light border below each item */
+    font-size: 0.9rem;  /* Slightly smaller text */
+}
+
+/* Last item has no border */
+.list-item:last-child {
+    border-bottom: none;  /* Remove last border */
+}
+
+/* Link button styling */
+.btn-link {
+    color: #2ecc71;  /* Green text */
+    text-decoration: none;  /* Remove underline */
+    font-weight: bold;  /* Bold text */
+    display: inline-block;  /* Make it clickable */
+    transition: 0.3s;  /* Smooth animation */
+}
+
+/* Hover on link button */
+.btn-link:hover {
+    color: #27ae60;  /* Darker green on hover */
+    text-decoration: underline;  /* Underline on hover */
+}
+
+/* Loading text */
+.loading {
+    color: #999;  /* Gray text */
+    font-style: italic;  /* Italic text */
+    text-align: center;  /* Center align */
+}
+
+/* ========== BUTTONS ========== */
+
+/* Button styling */
+.btn {
+    display: inline-block;  /* Block but inline */
+    padding: 0.75rem 1.5rem;  /* Inside spacing */
+    border-radius: 5px;  /* Slightly rounded */
+    text-decoration: none;  /* Remove underline */
+    font-weight: bold;  /* Bold text */
+    cursor: pointer;  /* Pointer cursor */
+    transition: 0.3s;  /* Smooth animation */
+    border: none;  /* No border */
+    font-size: 1rem;  /* Regular size */
+}
+
+/* Primary button (green) */
+.btn-primary {
+    background-color: #2ecc71;  /* Green */
+    color: white;  /* White text */
+}
+
+.btn-primary:hover {
+    background-color: #27ae60;  /* Darker green */
+}
+
+/* Secondary button (blue) */
+.btn-secondary {
+    background-color: #3498db;  /* Blue */
+    color: white;  /* White text */
+}
+
+.btn-secondary:hover {
+    background-color: #2980b9;  /* Darker blue */
+}
+
+/* Success button (light green) */
+.btn-success {
+    background-color: #1abc9c;  /* Teal */
+    color: white;  /* White text */
+}
+
+.btn-success:hover {
+    background-color: #16a085;  /* Darker teal */
+}
+
+/* Danger button (red) */
+.btn-danger {
+    background-color: #e74c3c;  /* Red */
+    color: white;  /* White text */
+}
+
+.btn-danger:hover {
+    background-color: #c0392b;  /* Darker red */
+}
+
+/* ========== QUICK ACTIONS ========== */
+
+/* Quick actions section */
+.quick-actions {
+    background-color: white;  /* White background */
+    padding: 2rem;  /* Inside spacing */
+    border-radius: 8px;  /* Rounded corners */
+    margin-bottom: 2rem;  /* Space below */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);  /* Subtle shadow */
+}
+
+/* Quick actions heading */
+.quick-actions h3 {
+    color: #2ecc71;  /* Green */
+    margin-bottom: 1.5rem;  /* Space below */
+}
+
+/* Button container */
+.action-buttons {
+    display: flex;  /* Side-by-side layout */
+    gap: 1rem;  /* Space between buttons */
+    flex-wrap: wrap;  /* Wrap on smaller screens */
+}
+
+/* ========== STATISTICS ========== */
+
+/* Stats section */
+.stats {
+    background-color: white;  /* White background */
+    padding: 2rem;  /* Inside spacing */
+    border-radius: 8px;  /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);  /* Subtle shadow */
+}
+
+/* Stats heading */
+.stats h3 {
+    color: #2ecc71;  /* Green */
+    margin-bottom: 1.5rem;  /* Space below */
+}
+
+/* Grid of stat boxes */
+.stats-grid {
+    display: grid;  /* Grid layout */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));  /* Auto-responsive */
+    gap: 1.5rem;  /* Space between boxes */
+}
+
+/* Individual stat box */
+.stat-box {
+    background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%);  /* Green gradient */
+    color: white;  /* White text */
+    padding: 1.5rem;  /* Inside spacing */
+    border-radius: 8px;  /* Rounded corners */
+    text-align: center;  /* Center align */
+    box-shadow: 0 2px 10px rgba(46, 204, 113, 0.3);  /* Green shadow */
+}
+
+/* Large stat number */
+.stat-number {
+    font-size: 2.5rem;  /* Very large */
+    font-weight: bold;  /* Bold */
+    margin-bottom: 0.5rem;  /* Space below */
+}
+
+/* Stat label text */
+.stat-label {
+    font-size: 0.9rem;  /* Smaller text */
+    opacity: 0.9;  /* Slightly transparent */
+}
+
+/* ========== FOOTER ========== */
+
+/* Footer at bottom */
+.footer {
+    background-color: #333;  /* Dark background */
+    color: white;  /* White text */
+    text-align: center;  /* Center align */
+    padding: 2rem;  /* Inside spacing */
+    margin-top: 3rem;  /* Space above */
+}
+
+/* Footer text */
+.footer p {
+    margin: 0;  /* No margins */
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
+
+/* For smaller screens (tablets) */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;  /* Stack vertically */
+        gap: 1rem;  /* Space between items */
+    }
+    
+    .navbar-menu {
+        gap: 1rem;  /* Less space between links */
+    }
+    
+    .dashboard h2 {
+        font-size: 2rem;  /* Smaller heading */
+    }
+    
+    .cards-grid {
+        grid-template-columns: 1fr;  /* Single column */
+    }
+    
+    .action-buttons {
+        flex-direction: column;  /* Stack buttons vertically */
+    }
+    
+    .btn {
+        width: 100%;  /* Full width buttons */
+    }
+}
+
+/* For very small screens (phones) */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 1rem;  /* Less side padding */
+    }
+    
+    .navbar-brand h1 {
+        font-size: 1.2rem;  /* Smaller logo */
+    }
+    
+    .navbar-menu {
+        display: none;  /* Hide menu on small screens */
+    }
+}

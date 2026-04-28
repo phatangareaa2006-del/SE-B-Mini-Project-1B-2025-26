@@ -1,0 +1,15 @@
+.git/
+.github/
+.vscode/
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+agro_assist_app/build/
+agro_assist_app/.dart_tool/
+agro_assist_app/.flutter-plugins
+agro_assist_app/.flutter-plugins-dependencies
+agro_assist_app/windows/flutter/ephemeral/
+deployed/
+memories/

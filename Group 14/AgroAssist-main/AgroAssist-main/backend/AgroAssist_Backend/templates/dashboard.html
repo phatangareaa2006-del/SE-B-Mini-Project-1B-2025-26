@@ -1,0 +1,259 @@
+<!-- Dashboard Page - Main landing page showing overview -->
+{% extends "base.html" %}
+
+<!-- Set page title -->
+{% block title %}Dashboard - Farm Buddy{% endblock %}
+
+<!-- Main content of dashboard -->
+{% block content %}
+<div class="dashboard">
+    <!-- Page heading -->
+    <h2>Welcome to Farm Buddy Dashboard 🚜</h2>
+    <p class="subtitle">Your assistant for growing crops successfully</p>
+    
+    <!-- Grid of cards showing different sections -->
+    <div class="cards-grid">
+        
+        <!-- CROPS CARD - Shows available crops -->
+        <div class="card">
+            <div class="card-header">
+                <h3>🌱 Available Crops</h3>
+            </div>
+            <div class="card-body">
+                <!-- Container where crops list will be inserted by JavaScript -->
+                <div id="crops-list" class="list-container">
+                    <!-- Loading message shown while fetching data -->
+                    <p class="loading">Loading crops...</p>
+                </div>
+                <!-- Link to view all crops -->
+                <a href="/crops/" class="btn-link">View All →</a>
+            </div>
+        </div>
+        
+        <!-- FARMERS CARD - Shows registered farmers -->
+        <div class="card">
+            <div class="card-header">
+                <h3>👨‍🌾 Registered Farmers</h3>
+            </div>
+            <div class="card-body">
+                <!-- Container where farmers list will be inserted by JavaScript -->
+                <div id="farmers-list" class="list-container">
+                    <!-- Loading message shown while fetching data -->
+                    <p class="loading">Loading farmers...</p>
+                </div>
+                <!-- Link to view all farmers -->
+                <a href="/farmers/" class="btn-link">View All →</a>
+            </div>
+        </div>
+        
+        <!-- TASKS CARD - Shows pending tasks -->
+        <div class="card">
+            <div class="card-header">
+                <h3>✅ Pending Tasks</h3>
+            </div>
+            <div class="card-body">
+                <!-- Container where tasks list will be inserted by JavaScript -->
+                <div id="tasks-list" class="list-container">
+                    <!-- Loading message shown while fetching data -->
+                    <p class="loading">Loading tasks...</p>
+                </div>
+                <!-- Link to view all tasks -->
+                <a href="/tasks/" class="btn-link">View All →</a>
+            </div>
+        </div>
+        
+        <!-- WEATHER CARD - Shows weather alerts -->
+        <div class="card">
+            <div class="card-header">
+                <h3>🌦️ Weather Alerts</h3>
+            </div>
+            <div class="card-body">
+                <!-- Container where weather alerts will be inserted by JavaScript -->
+                <div id="weather-list" class="list-container">
+                    <!-- Loading message shown while fetching data -->
+                    <p class="loading">Loading weather data...</p>
+                </div>
+                <!-- Link to view weather -->
+                <a href="/weather/" class="btn-link">View All →</a>
+            </div>
+        </div>
+        
+    </div>
+    
+    <!-- QUICK ACTIONS SECTION -->
+    <div class="quick-actions">
+        <h3>Quick Actions</h3>
+        <div class="action-buttons">
+            <!-- Button to go to crops page -->
+            <a href="/crops/" class="btn btn-primary">Browse Crops</a>
+            <!-- Button to go to farmers page -->
+            <a href="/farmers/" class="btn btn-secondary">Manage Farmers</a>
+            <!-- Button to go to tasks page -->
+            <a href="/tasks/" class="btn btn-success">View Tasks</a>
+            <!-- Button to go to admin panel -->
+            <a href="/admin/" class="btn btn-danger">Admin Panel</a>
+        </div>
+    </div>
+    
+    <!-- STATS SECTION -->
+    <div class="stats">
+        <h3>Statistics</h3>
+        <div class="stats-grid">
+            <!-- Total crops count -->
+            <div class="stat-box">
+                <div class="stat-number" id="stat-crops">0</div>
+                <div class="stat-label">Total Crops</div>
+            </div>
+            <!-- Total farmers count -->
+            <div class="stat-box">
+                <div class="stat-number" id="stat-farmers">0</div>
+                <div class="stat-label">Total Farmers</div>
+            </div>
+            <!-- Total tasks count -->
+            <div class="stat-box">
+                <div class="stat-number" id="stat-tasks">0</div>
+                <div class="stat-label">Pending Tasks</div>
+            </div>
+            <!-- Active weather alerts -->
+            <div class="stat-box">
+                <div class="stat-number" id="stat-alerts">0</div>
+                <div class="stat-label">Active Alerts</div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+<!-- Script to load data from APIs and display on dashboard -->
+<script>
+    // FUNCTION: Load crops from API and display
+    function loadCrops() {
+        // fetch = Make HTTP request to API
+        fetch('/api/crops/?page_size=5')  // Get first 5 crops
+            .then(response => response.json())  // Convert response to JSON
+            .then(data => {  // Process the data
+                // Get the crops list container
+                const cropsList = document.getElementById('crops-list');
+                
+                // Clear loading message
+                cropsList.innerHTML = '';
+                
+                // Loop through each crop in the data
+                data.results.forEach(crop => {
+                    // Create HTML for each crop
+                    const cropHTML = `
+                        <div class="list-item">
+                            <strong>${crop.name}</strong> - ${crop.season}
+                        </div>
+                    `;
+                    // Add the crop HTML to the page
+                    cropsList.innerHTML += cropHTML;
+                });
+                
+                // Update stats count
+                document.getElementById('stat-crops').textContent = data.count;
+            })
+            .catch(error => console.error('Error loading crops:', error));  // If error, log it
+    }
+    
+    // FUNCTION: Load farmers from API and display
+    function loadFarmers() {
+        // fetch = Make HTTP request to API
+        fetch('/api/farmers/?page_size=5')  // Get first 5 farmers
+            .then(response => response.json())  // Convert response to JSON
+            .then(data => {  // Process the data
+                // Get the farmers list container
+                const farmersList = document.getElementById('farmers-list');
+                
+                // Clear loading message
+                farmersList.innerHTML = '';
+                
+                // Loop through each farmer in the data
+                data.results.forEach(farmer => {
+                    // Create HTML for each farmer
+                    const farmerHTML = `
+                        <div class="list-item">
+                            <strong>${farmer.first_name} ${farmer.last_name}</strong> - ${farmer.city}
+                        </div>
+                    `;
+                    // Add the farmer HTML to the page
+                    farmersList.innerHTML += farmerHTML;
+                });
+                
+                // Update stats count
+                document.getElementById('stat-farmers').textContent = data.count;
+            })
+            .catch(error => console.error('Error loading farmers:', error));  // If error, log it
+    }
+    
+    // FUNCTION: Load tasks from API and display
+    function loadTasks() {
+        // fetch = Make HTTP request to API
+        fetch('/api/tasks/?page_size=5')  // Get first 5 tasks
+            .then(response => response.json())  // Convert response to JSON
+            .then(data => {  // Process the data
+                // Get the tasks list container
+                const tasksList = document.getElementById('tasks-list');
+                
+                // Clear loading message
+                tasksList.innerHTML = '';
+                
+                // Loop through each task in the data
+                data.results.forEach(task => {
+                    // Create HTML for each task
+                    const taskHTML = `
+                        <div class="list-item">
+                            <strong>${task.task_name}</strong> - ${task.status}
+                        </div>
+                    `;
+                    // Add the task HTML to the page
+                    tasksList.innerHTML += taskHTML;
+                });
+                
+                // Update stats count
+                document.getElementById('stat-tasks').textContent = data.count;
+            })
+            .catch(error => console.error('Error loading tasks:', error));  // If error, log it
+    }
+    
+    // FUNCTION: Load weather alerts from API and display
+    function loadWeather() {
+        // fetch = Make HTTP request to API
+        fetch('/api/weather-alerts/?page_size=5')  // Get first 5 alerts
+            .then(response => response.json())  // Convert response to JSON
+            .then(data => {  // Process the data
+                // Get the weather list container
+                const weatherList = document.getElementById('weather-list');
+                
+                // Clear loading message
+                weatherList.innerHTML = '';
+                
+                // Loop through each weather alert in the data
+                data.results.forEach(alert => {
+                    // Create HTML for each alert
+                    const alertHTML = `
+                        <div class="list-item">
+                            <strong>${alert.alert_type}</strong> - ${alert.severity}
+                        </div>
+                    `;
+                    // Add the alert HTML to the page
+                    weatherList.innerHTML += alertHTML;
+                });
+                
+                // Update stats count
+                document.getElementById('stat-alerts').textContent = data.count;
+            })
+            .catch(error => console.error('Error loading weather:', error));  // If error, log it
+    }
+    
+    // RUN THESE FUNCTIONS WHEN PAGE LOADS
+    // This happens automatically when the page is ready
+    document.addEventListener('DOMContentLoaded', function() {
+        loadCrops();  // Load and display crops
+        loadFarmers();  // Load and display farmers
+        loadTasks();  // Load and display tasks
+        loadWeather();  // Load and display weather
+    });
+</script>
+
+{% endblock %}
